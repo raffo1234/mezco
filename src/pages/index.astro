@@ -3,6 +3,9 @@ import { Icon } from "astro-icon/components";
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import hero from "../assets/hero.png";
+
+const now = new Date();
+const year = now.getFullYear();
 ---
 
 <Layout>
@@ -55,7 +58,7 @@ import hero from "../assets/hero.png";
   <footer
     class="py-20 font-raleway text-sm px-4 max-w-[1250px] mx-auto text-right"
   >
-    All rights reserved. Mezco @ 2025
+    All rights reserved. Mezco @ {year}
   </footer>
 </Layout>
 
