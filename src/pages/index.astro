@@ -1,8 +1,8 @@
 ---
-import { Icon } from "astro-icon/components";
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import hero from "../assets/hero.png";
+import logo from "../assets/logo.png";
 
 const now = new Date();
 const year = now.getFullYear();
@@ -10,21 +10,26 @@ const year = now.getFullYear();
 
 <Layout>
   <header class="border-orange border-b w-full">
-    <div class="flex max-w-[1250px] w-full mx-auto px-4 py-6">
+    <div
+      class="flex justify-between items-center max-w-[1250px] w-full mx-auto px-4 py-6"
+    >
       <h1>
         <a
           href="/"
           title="Mezco Inmobiliaria"
           class="flex items-center space-x-2 font-poppings font-bold"
         >
-          <Icon
-            name="material-symbols-light:award-star-rounded"
-            size="32"
-            class="text-orange"
-          />
-          <span>MEZCO</span>
+          <Image src={logo} class="w-12" alt="Mezco Inmobilaria " />
         </a>
       </h1>
+      <p class="font-bebas-neue tracking-wider text-xl">Mezco Inmobiliaria</p>
+      <a
+        href="/"
+        title="Mezco Inmobiliaria"
+        class="flex items-center space-x-2 opacity-0 font-poppings font-bold"
+      >
+        <Image src={logo} class="w-12" alt="Mezco Inmobilaria " />
+      </a>
     </div>
   </header>
   <main>
