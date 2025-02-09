@@ -3,6 +3,8 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     fontFamily: {
+      "bebas-neue": ["Bebas Neue", "sans-serif"],
+      poppings: ["Poppins", "sans-serif"],
       quicksand: ["Quicksand", "sans-serif"],
       raleway: ["Raleway", "sans-serif"],
       manrope: ["Manrope", "sans-serif"],
@@ -11,11 +13,7 @@ export default {
     },
     extend: {
       colors: {
-        purple: "#704EE7",
-        orange: "#FCCF5A",
-        "light-orange": "#FFE5A2",
-        pink: "#DFC8FD",
-        "light-gray": "#eeeeee",
+        orange: "#FF5C01",
       },
     },
   },

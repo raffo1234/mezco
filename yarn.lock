@@ -387,6 +387,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.24.2.tgz#34aa0b52d0fbb1a654b596acfa595f0c7b77a77b"
   integrity sha512-7VTgWzgMGvup6aSqDPLiW5zHaxYJGTO4OokMjIlrCtf+VpEL+cXKtCvg723iguPYI5oaUNdS+/V7OU2gvXVWEg==
 
+"@fontsource/bebas-neue@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/bebas-neue/-/bebas-neue-5.1.1.tgz#6bead2d3a3ccd538195c3dfb8d3eee352ad3c110"
+  integrity sha512-g6oipmEWWcsRUe/rOIjSXkZ320gYoAgyItE3U6sYxBITYE9HSNj7FZRBwFikG1zJcb+oAmITQD/crtw0jg7cog==
+
 "@fontsource/lobster@^5.1.1":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@fontsource/lobster/-/lobster-5.1.1.tgz#b4afbee3c90d5c699a85daa16788027997744442"
@@ -406,6 +411,11 @@
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@fontsource/nixie-one/-/nixie-one-5.1.1.tgz#d7c7ad9f6fc183cf324514ccc879b7d5bea79c16"
   integrity sha512-W9DaArL3o9ftlvDI0xVgyLKnaqSsDMwuPmxjvuicYx0IYBxhSyPZsbtee5YAAZ+1hLMxbaUrZgkzyUF0NLSREg==
+
+"@fontsource/poppins@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-5.1.1.tgz#fe7c25534d2f46bf296c37b68535d419913bc2c4"
+  integrity sha512-PQVKHGQOK+UpVNPzTFF9Z9ez3CIDkunfvRXGH95hiDoqWJc1shW4JFqe4tEoqnq7RtZaYrw9aWQq58L4eny5xg==
 
 "@fontsource/quicksand@^5.1.1":
   version "5.1.1"

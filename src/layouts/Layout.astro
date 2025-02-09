@@ -1,4 +1,6 @@
 ---
+import "@fontsource/bebas-neue";
+import "@fontsource/poppins";
 import "@fontsource/quicksand";
 import "@fontsource/raleway";
 import "@fontsource/lobster";
@@ -17,17 +19,17 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta
       name="description"
-      content="Rafael Meza - Web Developer specializing in ReactJS. Building modern, scalable, and efficient web applications. Turn your ideas into reality with custom tech solutions. Expert in front-end development and JavaScript frameworks."
+      content="Mezco Inmobiliaria: Tu aliado en bienes raíces. Encuentra tu hogar ideal, inversiones seguras y asesoría experta. ¡Transformamos tus sueños en realidad!"
     />
     <title>
       {pageTitle}
       {pageTitle ? " | " : ""}
-      Rafael Meza | Web Developer
+      Mezco Inmobiliaria
     </title>
     <ClientRouter />
   </head>
 
-  <body id="app" class="bg-[#D8C1F6]">
+  <body>
     <slot />
   </body>
 </html>

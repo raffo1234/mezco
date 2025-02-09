@@ -1,113 +1,60 @@
 ---
 import { Icon } from "astro-icon/components";
 import Layout from "../layouts/Layout.astro";
-import Container from "../components/Container.astro";
+import { Image } from "astro:assets";
+import hero from "../assets/hero.png";
 ---
 
 <Layout>
-  <Container>
-    <div
-      class="p-2 md:p-[40px] lg:p-[80px] min-h-[790px] max-w-[1250px] mx-auto bg-white rounded-[32px] lg:rounded-[52px] w-full"
-    >
-      <div class="lg:flex lg:space-x-5 lg:mb-5 lg:h-[60%]">
+  <header class="border-orange border-b w-full">
+    <div class="flex max-w-[1250px] w-full mx-auto px-4 py-6">
+      <h1>
         <a
-          transition:name="about"
-          href="/about-me"
-          title="About Rafael Meza"
-          class="mb-2 lg:mb-0 lg:w-[60%] h-[330px] lg:h-auto w-full bg-purple rounded-[24px] flex justify-center items-center"
-        >
-          <div class="flex items-center space-x-5 p-4">
-            <Icon
-              name="material-symbols-light:award-star-rounded"
-              size="96"
-              class="text-orange"
-            />
-            <h1
-              class="text-orange font-nixie-one"
-              style="font-size:clamp(18px, 4vw + 1rem, 50px)"
-            >
-              RAFAEL MEZA
-            </h1>
-          </div>
-        </a>
-        <a
-          transition:name="projects"
-          href="/projects"
-          title="Projects"
-          class="mb-2 lg:mb-0 lg:w-[40%] block h-[330px] lg:h-auto w-full bg-orange rounded-[24px] relative overflow-hidden p-9"
+          href="/"
+          title="Mezco Inmobiliaria"
+          class="flex items-center space-x-2 font-poppings font-bold"
         >
           <Icon
             name="material-symbols-light:award-star-rounded"
-            size="196"
-            class="text-light-orange absolute -right-[80px]"
+            size="32"
+            class="text-orange"
           />
-          <article class="absolute left-0 right-0 bottom-0 p-8">
-            <h2 class="text-3xl mb-3 font-quicksand font-bold">Projects</h2>
-            <p class="text-sm leading-relaxed">
-              A showcase of innovative web applications focused on user
-              experience, functionality, and performance.
-            </p>
-          </article>
+          <span>MEZCO</span>
         </a>
-      </div>
-      <div class="lg:flex lg:space-x-5 lg:h-[40%]">
-        <a
-          href="/contact"
-          title="Get in Touch"
-          class="mb-2 lg:mb-0 block lg:w-[30%] h-[330px] lg:h-auto bg-pink rounded-[24px] overflow-hidden relative"
+      </h1>
+    </div>
+  </header>
+  <main>
+    <div class="max-w-[1250px] mx-auto py-20">
+      <div class="md:px-20 px-4">
+        <p
+          style="font-size:clamp(24px, 4vw + 3rem, 120px)"
+          class="uppercase font-bebas-neue text-[120px] w-full inline-block leading-none"
         >
-          <Icon
-            name="material-symbols-light:cloud"
-            size="196"
-            class="text-light-orange absolute -right-[80px]"
-          />
-          <article
-            transition:name="contact"
-            class="absolute left-0 right-0 bottom-0 p-8"
-          >
-            <h2 class="text-3xl font-bold mb-3 font-quicksand">Get in Touch</h2>
-            <p class="text-sm leading-relaxed">
-              Reach out via email or connect with me on social media. I'd love
-              to hear from you!
-            </p>
-          </article>
-        </a>
-        <a
-          href="/hobbies-interests"
-          transition:name="hobbies-interests"
-          class="mb-2 lg:mb-0 lg:w-[70%] min-h-[430px] sm:min-h-[360px] md:min-h-[300px] lg:min-h-0 bg-light-gray rounded-[24px] overflow-hidden relative block"
-          title="Hobbies & Interests"
-        >
-          <Icon
-            name="material-symbols-light:signpost-rounded"
-            size="196"
-            class="text-light-orange absolute -right-[80px]"
-          />
-          <article class="absolute left-0 right-0 bottom-0 p-8">
-            <h2 class="text-3xl font-bold mb-3 font-quicksand">
-              Hobbies & Interests
-            </h2>
-            <p class="text-sm mb-3 leading-relaxed">
-              When I'm not coding, I love exploring my creative and active side!
-              Here's what keeps me inspired:
-            </p>
-            <ul class="text-sm mb-3 leading-relaxed">
-              <li>
-                <b>Digital Design:</b> Creating visuals in Photoshop and Illustrator.
-              </li>
-              <li>
-                <b>3D Modeling: </b>Bringing ideas to life with SketchUp and
-                AutoCAD.
-              </li>
-              <li><b>Sports: </b> Staying active with soccer and running.</li>
-              <li>
-                <b>Cooking: </b> Experimenting with new recipes and flavors in the
-                kitchen.
-              </li>
-            </ul>
-          </article>
-        </a>
+          Construyendo sueños, <br />
+          <span class="text-right inline-block w-full">creando hogares</span>
+        </p>
       </div>
     </div>
-  </Container>
+    <div class="lg:flex items-center md:space-x-28 space-x-4">
+      <div class="flex-1 flex-shrink-0 mb-20 lg:mb-0">
+        <Image src={hero} class="w-full" alt="Mezco Inmobilaria " />
+      </div>
+      <div class="flex-1 md:pr-28 pr-4">
+        <p class="font-raleway text-base md:text-2xl leading-relaxed mb-6">
+          Te acompañamos en cada paso para encontrar el hogar perfecto, la
+          inversión ideal o el espacio que se adapte a tus necesidades.
+        </p>
+        <p class="font-raleway text-base md:text-2xl leading-relaxed">
+          Con años de experiencia, transparencia y un enfoque personalizado,
+          estamos aquí para convertir tus metas en realidad.
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer
+    class="py-20 font-raleway text-sm px-4 max-w-[1250px] mx-auto text-right"
+  >
+    All rights reserved. Mezco @ 2025
+  </footer>
 </Layout>
