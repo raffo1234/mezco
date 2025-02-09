@@ -58,3 +58,12 @@ import hero from "../assets/hero.png";
     All rights reserved. Mezco @ 2025
   </footer>
 </Layout>
+
+<script is:inline>
+  document.addEventListener("astro:page-load", () => {
+    const app = document.getElementById("app");
+    if (!app) return;
+
+    app.classList.add("!opacity-100");
+  });
+</script>
