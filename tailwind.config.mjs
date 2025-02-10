@@ -3,6 +3,7 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     fontFamily: {
+      tundra: ["TundraRegular", "sans-serif"],
       "bebas-neue": ["Bebas Neue", "sans-serif"],
       poppings: ["Poppins", "sans-serif"],
       quicksand: ["Quicksand", "sans-serif"],
