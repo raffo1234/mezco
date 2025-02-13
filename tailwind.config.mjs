@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       colors: {
-        orange: "#FF5C01",
+        orange: "#FE904B",
       },
     },
   },
