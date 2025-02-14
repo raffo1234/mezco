@@ -68,12 +68,3 @@ const year = now.getFullYear();
     All rights reserved. Mezco @ {year}
   </footer>
 </Layout>
-
-<script is:inline>
-  document.addEventListener("astro:page-load", () => {
-    const app = document.getElementById("app");
-    if (!app) return;
-
-    app.classList.add("!opacity-100");
-  });
-</script>

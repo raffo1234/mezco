@@ -31,5 +31,14 @@ const { pageTitle } = Astro.props;
 
   <body id="app" class="opacity-0 transition-opacity duration-300 ease-in-out">
     <slot />
+
+    <script is:inline>
+      document.addEventListener("astro:page-load", () => {
+        const app = document.getElementById("app");
+        if (!app) return;
+
+        app.classList.add("!opacity-100");
+      });
+    </script>
   </body>
 </html>
